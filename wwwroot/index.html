@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rekrutacja - Zadanie</title>
+    <style>
+        body {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        table {
+            border-collapse: collapse;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+        }
+        td {
+            border: 1px solid #0000ff;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            transition: all .3s;
+        }
+        td:hover {
+            background-color: #0000ff;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>1A</td>
+            <td colspan="2">1B</td>
+            <td rowspan="3">1D</td>
+        </tr>
+        <tr>
+            <td colspan="2">2A</td>
+            <td>2C</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">3A</td>
+            <td rowspan="2">3C</td>
+        </tr>
+        <tr>
+            <td>4D</td>
+        </tr>
+    </table>
+</body>
+</html>
